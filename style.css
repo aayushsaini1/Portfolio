@@ -31,7 +31,11 @@ body {
 }
 
 section {
-    padding-bottom: 4rem;
+    margin-bottom: 6rem;
+}
+
+.about-me {
+    margin: 6rem auto 2rem auto;
 }
 
 #hero-image {
@@ -53,7 +57,8 @@ section {
     animation-delay: 0.15s;
 }
 
-.hero-heading {
+.hero-heading h1 {
+    font-size: 2.4rem;
     animation-name: show;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
@@ -64,6 +69,7 @@ section {
 
 .my-btn {
     background-color: #000;
+    border-color: #000;
     color: #fff;
     border-radius: 0.6rem;
     padding: 0.8rem 1.8rem;
@@ -96,6 +102,10 @@ section {
 
 .my-thumbnail {
     object-fit: cover;
+}
+
+.case-study {
+    margin-bottom: 4rem;
 }
 
 .client-logo {
@@ -133,8 +143,17 @@ section {
 /*Responsive*/
 
 @media screen and (max-width: 540px) {
-    section {
-        padding-bottom: 2rem;
+    #greetings,
+    .hero-heading,
+    .body-text,
+    {
+        margin-bottom: 2rem;
+    }
+    .case-study {
+        margin-bottom: 6rem;
+    }
+    #last-case-study {
+        margin-bottom: 2.4rem;
     }
     .artwork-tall {
         object-fit: cover;
@@ -169,8 +188,56 @@ ul li :hover {
     transition: all 0.25s ease-in-out;
 }
 
-.my-btn :hover {
-    background-color: red;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #212121;
+    border-color: #212121;
+}
+
+i.fas:before {
+    transform: translateX(0);
+}
+
+i.fas:hover {
+    transition: all 0.25s ease-in-out;
+    transform: translateX(1rem);
+}
+
+a.left-anim,
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .2rem;
+    top: 2rem;
+    left: 0;
+    background-color: #131313;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.left-anim:hover::before,
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.left-anim:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .2rem;
+    bottom: .2rem;
+    left: 0;
+    background-color: #131313;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 
