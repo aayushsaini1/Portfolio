@@ -11,7 +11,6 @@
 
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--Custom Fonts-->
@@ -26,7 +25,7 @@
 
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-light bg-white">
-                <div class="container">
+                <div class="container" data-aos="fade-down" data-aos-easing="ease-out" data-aos-duration="500">
                     <ul class="navbar-nav">
                         <li class="social-icons nav-item mr-4">
                             <a href="https://linkedin.com/in/aayushsaini" target="_blank">
@@ -78,7 +77,8 @@
             </nav>
         </div>
 
-        <div class="row">
+        <!--Nand please edit this-->
+        <!-- <div class="row">
             <ul class="row" id="mobile-nav">
                 <li class="">
                     <a class="nav-link" href="#work">Work</a>
@@ -90,14 +90,14 @@
                     <a class="nav-link" href="mailto:aayushsaini.77@gmail.com">Contact</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="main text-center">
             <section class="hero col" id="hero">
                 <div class="col">
                     <img class="my-4" id="hero-image" src="assets/Aayush-dp.png" alt="">
                     <div class="hero-content col-8 col-md-9 mx-auto">
-                        <h4 class="greetings mb-3">Hey! I'm Aayush <span id="emoji">&#x1F44B</span></h4>
+                        <h4 class="mb-3" id="greetings">Hey! I'm Aayush <span id="emoji">&#x1F44B</span></h4>
                         <div class="hero-heading">
                             <h1><b>Product Designer during day,</b></h1>
                             <h1><b> 3D Artist by Night!</b></h1>
@@ -114,12 +114,11 @@
 
             <section class="work text-center mx-auto my-5" id="work">
                 <div class="col">
-                    <h2 class="heading mb-5"><b>Get a glimpse of what I do best</b></h2>
+                    <h2 class="heading mb-5" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"><b>Get a glimpse of what I do best</b></h2>
 
                     <!--Case study-->
 
-                    <div class="row justify-center mx-auto col-lg-10 my-5">
-                        <!-- <div class="col-lg-1"></div> -->
+                    <div class="row justify-center mx-auto col-lg-10 my-5" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                         <img class="my-thumbnail col-lg-5 col-md-10 mx-md-auto mb-4" src="assets/case-study/stamurai.jpg" alt="">
                         <div class="content text-left col-lg-5 col-md-10 ml-lg-2 mt-lg-auto mt-sm-4 mx-auto my-auto">
                             <h3>Stamurai App Case Study</h3>
@@ -132,8 +131,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-center mx-auto col-lg-10 my-5">
-                        <!-- <div class="col-lg-1"></div> -->
+                    <div class="row justify-center mx-auto col-lg-10 my-5" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                         <img class="my-thumbnail col-lg-5 col-md-10 mx-md-auto mb-4" src="assets/case-study/hirebl.jpg" alt="">
                         <div class="content text-left col-lg-5 col-md-10 ml-lg-4 mt-lg-auto mt-sm-4 mx-auto my-auto">
                             <h3>Career Development and Learning Platform</h3>
@@ -146,8 +144,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-center mx-auto col-lg-10 my-5">
-                        <!-- <div class="col-lg-1"></div> -->
+                    <div class="row justify-center mx-auto col-lg-10 my-5" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                         <img class="my-thumbnail col-lg-5 col-md-10 mx-md-auto mb-4" src="assets/case-study/metro.jpg" alt="">
                         <div class="content text-left col-lg-5 col-md-10 ml-lg-4 mt-lg-auto mt-sm-4 mx-auto my-auto">
                             <h3>Delhi Metro Website Redesign</h3>
@@ -163,7 +160,7 @@
                 </div>
             </section>
 
-            <section class="clients my-5" id="clients">
+            <section class="clients my-5" id="clients" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                 <h2 class="heading mb-5"><b>Companies I've worked with</b></h2>
 
                 <div class="text-center">
@@ -190,7 +187,7 @@
                 </div>
             </section>
 
-            <section class="artwork my-5" id="artwork">
+            <section class="artwork my-5" id="artwork" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                 <h2 class="heading mb-5"><b>3D Artworks</b></h2>
                 <div class="row col-lg-10 mx-auto">
                     <div class="col-lg-4">
@@ -211,7 +208,7 @@
                 </div>
             </section>
 
-            <section class="about-me text-center mx-auto" id="about-me">
+            <section class="about-me text-center mx-auto" id="about-me" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
                 <h2 class="heading my-5"><b>About Me</b></h2>
                 <div class="row justify-center col-lg-10 mx-auto mb-5">
                     <img class="my-thumbnail col-lg-6 col-md-10 mx-md-auto" id="my-image" src="assets/AayushSaini-UglyPhoto.jpeg" alt="">
@@ -231,6 +228,11 @@
 
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/f725adb2cf.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

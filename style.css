@@ -20,15 +20,54 @@ section {
     padding-bottom: 4rem;
 }
 
+#hero-image {
+    max-width: 10rem;
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.05s;
+}
+
+#greetings {
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.15s;
+}
+
+.hero-heading {
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.25s;
+}
+
 .my-btn {
     background-color: #000;
     color: #fff;
     border-radius: 0.6rem;
     padding: 0.8rem 1.8rem;
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.45s;
 }
 
-#hero-image {
-    max-width: 10rem;
+.body-text {
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.35s;
 }
 
 .my-thumbnail {
@@ -95,6 +134,17 @@ ul li :hover {
 
 
 /*Animations*/
+
+@keyframes show {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 #emoji {
     animation-name: wave-animation;
