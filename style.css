@@ -1,6 +1,7 @@
 body {
     font-family: 'Plus Jakarta Display', sans-serif;
     color: black;
+    text-rendering: optimizeLegibility;
 }
 
 .navbar {
