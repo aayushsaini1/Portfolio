@@ -145,8 +145,7 @@ section {
 @media screen and (max-width: 540px) {
     #greetings,
     .hero-heading,
-    .body-text,
-    {
+    .body-text {
         margin-bottom: 2rem;
     }
     .case-study {
