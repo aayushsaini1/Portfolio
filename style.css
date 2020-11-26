@@ -112,6 +112,7 @@ section {
     max-width: 12rem;
     filter: grayscale(100%);
     opacity: 50%;
+    transition: all 0.5s ease-in-out;
 }
 
 .artwork-tall {
@@ -137,46 +138,6 @@ section {
     font-weight: 500;
     opacity: 50%;
     text-decoration: none;
-}
-
-
-/*Responsive*/
-
-@media screen and (max-width: 540px) {
-    #greetings,
-    .hero-heading,
-    .body-text {
-        margin-bottom: 2rem;
-    }
-    .case-study {
-        margin-bottom: 6rem;
-    }
-    #last-case-study {
-        margin-bottom: 2.4rem;
-    }
-    .artwork-tall {
-        object-fit: cover;
-        height: 18rem;
-        width: 100%;
-    }
-    .artwork-wide {
-        object-fit: cover;
-        height: 12rem;
-        width: 100%;
-    }
-    #navbar-full {
-        display: none;
-    }
-    /* #mobile-nav {
-        display: flex;
-        justify-content: center;
-    } */
-    .social {
-        display: flex;
-    }
-    article {
-        margin-top: 2rem;
-    }
 }
 
 
@@ -237,6 +198,68 @@ a.left-anim:before {
     background-color: #131313;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.bugs a:hover {
+    opacity: 100%;
+    transition: all 0.4s ease-out;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 540px) {
+    #greetings,
+    .hero-heading,
+    .body-text {
+        margin-bottom: 2rem;
+    }
+    .case-study {
+        margin-bottom: 6rem;
+    }
+    #last-case-study {
+        margin-bottom: 2.4rem;
+    }
+    .artwork-tall {
+        object-fit: cover;
+        height: 18rem;
+        width: 100%;
+    }
+    .artwork-wide {
+        object-fit: cover;
+        height: 12rem;
+        width: 100%;
+    }
+    #navbar-full {
+        display: none;
+    }
+    /* #mobile-nav {
+        display: flex;
+        justify-content: center;
+    } */
+    .social {
+        display: flex;
+    }
+    article {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .hero {
+        margin-top: 6rem;
+    }
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(6px);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+    }
 }
 
 
