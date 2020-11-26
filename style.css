@@ -1,11 +1,21 @@
 body {
     font-family: 'Plus Jakarta Display', sans-serif;
-    color: black;
+    color: #000;
     text-rendering: optimizeLegibility;
 }
 
 .navbar {
     padding: 1.6rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(1rem);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+}
+
+.my-e {
+    display: inline-block;
+    margin: auto 2px auto -2px;
+    transform-origin: center;
+    transform: rotate(-20deg);
 }
 
 
@@ -138,6 +148,7 @@ section {
     font-weight: 500;
     opacity: 50%;
     text-decoration: none;
+    transition: all 0.25s ease-out;
 }
 
 
@@ -148,19 +159,21 @@ ul li :hover {
     transition: all 0.25s ease-in-out;
 }
 
-.btn-primary:hover,
+
+/* .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
     background-color: #212121;
     border-color: #212121;
+} */
+
+i.fas {
+    color: #000;
+    transition: all 0.25s ease-in-out;
 }
 
-i.fas:before {
-    transform: translateX(0);
-}
-
-i.fas:hover {
+.btn:hover>i.fas {
     transition: all 0.25s ease-in-out;
     transform: translateX(1rem);
 }
@@ -185,7 +198,7 @@ a.left:before {
 a.left-anim:hover::before,
 a.left:hover:before {
     visibility: visible;
-    width: 100%;
+    width: 108%;
 }
 
 a.left-anim:before {
@@ -208,7 +221,7 @@ a.left-anim:before {
 
 .bugs a:hover {
     opacity: 100%;
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -254,11 +267,6 @@ a.left-anim:before {
 @media screen and (min-width: 540px) {
     .hero {
         margin-top: 6rem;
-    }
-    .navbar {
-        background-color: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(6px);
-        border-bottom: 2px solid rgba(0, 0, 0, 0.03);
     }
 }
 
