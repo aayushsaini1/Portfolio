@@ -28,15 +28,30 @@
     <!--Plus Jakarta Display-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-10SPPYFFQX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-10SPPYFFQX');
+    </script>
+
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+
     <title>Aayush Saini - Product Designer | 3D Artist</title>
 </head>
 
 <body>
     <div class="container-fluid !justify overflow-hidden">
         <div class="container">
-            <nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar-full">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light" id="navbar-full">
                 <div class="container" data-aos="fade-down" data-aos-easing="ease-out" data-aos-duration="400">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" id="nav-brand">
                         <li class="social-icons nav-item mr-4">
                             <a href="https://linkedin.com/in/aayushsaini" target="_blank" rel="noreferrer" alt="aayush saini linkedin profile">
                                 <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
@@ -63,12 +78,14 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="navbar-toggler" type="button" data- toggle="collapse" data-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end">
-                        <div class="navbar-nav ">
-                            <ul class="navbar-nav">
+
+                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+                      </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                        <div class="navbar-nav" id="my-links">
+                            <ul class=" navbar-nav">
                                 <li class="nav-item ml-4">
                                     <a class="left-anim nav-link" href="#work">Work</a>
                                 </li>
@@ -85,28 +102,13 @@
             </nav>
         </div>
 
-        <!--mobile navbar-->
-        <!-- <div class="col-8 mx-auto" data-aos="fade-down" data-aos-easing="ease-out" data-aos-duration="600">
-            <ul class="list-group list-group-horizontal mx-auto justify-content-center" id="mobile-nav">
-                <li class="list-item mx-auto">
-                    <a href="#work">Work</a>
-                </li>
-                <li class="mx-auto">
-                    <a href="#about-me">About me</a>
-                </li>
-                <li class="mx-auto">
-                    <a href="mailto:aayushsaini.77@gmail.com">Contact</a>
-                </li>
-            </ul>
-        </div> -->
-
         <div class="main text-center">
             <section class="hero col text-center mx-auto" id="hero">
                 <img class="my-4" id="hero-image" src="assets/Aayush-dp.webp" alt="aayush saini caricature">
                 <div class="hero-content col-lg-8 col-md-9 mx-auto">
                     <h4 class="mb-3" id="greetings">Hey! I'm Aayush <span id="emoji">&#x1F44B</span></h4>
                     <div class="hero-heading">
-                        <h1><b>Product D<span class="my-e">e</span>signer during day,</b></h1>
+                        <h1><b>Product Designer during day,</b></h1>
                         <h1><b> 3D Artist by Night!</b></h1>
                     </div>
                     <p class="body-text col-lg-6 col-md-9 mx-auto my-4">An engineer turned self-taught designer based out of Delhi, India. I believe in creating user experience focused user interfaces, being an engineering student helps me to create user interfaces which are efficient from the development
@@ -141,6 +143,7 @@
                         </ul>
                     </div>
                     <a class="my-btn btn btn-primary btn-lg btn-dark" href="https://linkedin.com/in/aayushsaini" target="_blank" rel="noreferrer" role="button" alt="connect with me on linkedin">Connect with me</a>
+                    <!-- <a class="btn btn-primary btn-sm" role="button" onclick="darkMode()">Dark</a> -->
                 </div>
             </section>
 
@@ -237,7 +240,7 @@
             </section>
 
             <section class="about-me text-center mx-auto" id="about-me" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="400">
-                <h2 class="heading my-5"><b>About M<span class="my-e">e</span></b></h2>
+                <h2 class="heading my-5"><b>About Me</b></h2>
                 <div class="row justify-center col-lg-10 mx-auto mb-5">
                     <img class="my-thumbnail col-lg-6 col-md-10 mx-md-auto" id="my-image" src="assets/AayushSaini-UglyPhoto.webp" alt="">
                     <div class="content text-left col-lg-5 col-md-10 mb-sm-4 mt-sm-4 mx-auto my-auto">

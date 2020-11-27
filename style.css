@@ -11,25 +11,19 @@ body {
     border-bottom: 2px solid rgba(0, 0, 0, 0.03);
 }
 
-.my-e {
-    display: inline-block;
-    margin: auto 2px auto -2px;
-    transform-origin: center;
-    transform: rotate(-20deg);
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    border: none !important;
+    outline: none !important;
 }
 
-
-/* #mobile-nav {
-    display: none;
-    list-style-type: none;
-    margin: 1.4rem;
+.custom-toggler,
+.custom-toggler:focus,
+.custom-toggler:active {
+    border: 0;
+    outline: 0;
+    stroke: none;
 }
-
-#mobile-nav a {
-    color: #666;
-    text-decoration: none;
-    font-weight: 500;
-} */
 
 .social-icons i {
     color: #000;
@@ -219,6 +213,10 @@ a.left-anim:before {
     transition: all 0.4s ease-in-out;
 }
 
+.footer {
+    margin: 5rem auto 2rem auto;
+}
+
 .bugs a:hover {
     opacity: 100%;
     transition: all 0.3s ease-in-out;
@@ -249,13 +247,18 @@ a.left-anim:before {
         height: 12rem;
         width: 100%;
     }
-    #navbar-full {
+    .navbar {
+        padding: 1rem;
+    }
+    #my-links {
+        margin-left: -1.4rem;
+    }
+    .hero {
+        margin-top: 4rem;
+    }
+    #nav-brand {
         display: none;
     }
-    /* #mobile-nav {
-        display: flex;
-        justify-content: center;
-    } */
     .social {
         display: flex;
     }
@@ -320,3 +323,73 @@ a.left-anim:before {
         transform: rotate( 0.0deg)
     }
 }
+
+
+/*Dark Mode*/
+
+
+/* .dark body {
+    background-color: #152028;
+    color: #fff;
+}
+
+.dark-btn .my-btn {
+    background-color: #0156c0;
+    border-color: #0156c0;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    padding: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(1rem);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark-list i.fas {
+    color: white;
+} */
+
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        color: #f5f5f5;
+        background-color: #000;
+    }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    }
+    .fa-bars,
+    .fa-arrow-right {
+        color: #f5f5f5 !important;
+    }
+    .my-btn {
+        color: #000;
+        font-weight: 500;
+        background-color: #57aaf7 !important;
+    }
+    .btn:hover {
+        color: #f5f5f5 !important;
+    }
+    .secondary-cta {
+        color: #f5f5f5;
+    }
+    #my-links a {
+        color: #f5f5f5;
+    }
+    .social-icons i {
+        color: #f5f5f5;
+    }
+    img {
+        filter: contrast(1.2);
+        filter: brightness(0.9);
+    }
+    a.left:before,
+    a.left-anim::before {
+        background-color: #57aaf7!important;
+    }
+    .bugs a {
+        color: #f5f5f5;
+    }
+}*/
