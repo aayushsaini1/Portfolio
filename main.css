@@ -1,0 +1,395 @@
+body {
+    font-family: 'Plus Jakarta Display', sans-serif;
+    color: #000;
+    text-rendering: optimizeLegibility;
+}
+
+.navbar {
+    padding: 1.6rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(1rem);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    border: none !important;
+    outline: none !important;
+}
+
+.custom-toggler,
+.custom-toggler:focus,
+.custom-toggler:active {
+    border: 0;
+    outline: 0;
+    stroke: none;
+}
+
+.social-icons i {
+    color: #000;
+}
+
+.nav-item a {
+    font-family: 'Plus Jakarta Display', sans-serif;
+    font-weight: 500;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+.about-me {
+    margin: 6rem auto 2rem auto;
+}
+
+#hero-image {
+    max-width: 10rem;
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.05s;
+}
+
+#greetings {
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.15s;
+}
+
+.hero-heading h1 {
+    font-size: 2.4rem;
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.25s;
+}
+
+.my-btn {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    border-radius: 0.6rem;
+    padding: 0.8rem 1.8rem;
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.45s;
+}
+
+.body-text {
+    animation-name: show;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    transform: translateY(1rem);
+    opacity: 0;
+    animation-delay: 0.35s;
+}
+
+.social {
+    list-style-type: none;
+    justify-content: space-between;
+    display: none;
+}
+
+.social li {
+    margin: 0 1rem 1.4rem;
+}
+
+.my-thumbnail {
+    object-fit: cover;
+}
+
+.case-study {
+    margin-bottom: 4rem;
+}
+
+.client-logo {
+    max-width: 12rem;
+    filter: grayscale(100%);
+    opacity: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.artwork-tall {
+    object-fit: cover;
+    height: 32rem;
+    width: 100%;
+}
+
+.artwork-wide {
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+}
+
+#my-image {
+    object-fit: cover;
+    object-position: 50% 90%;
+    height: 21rem;
+}
+
+.bugs a {
+    color: #000;
+    font-weight: 500;
+    opacity: 50%;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+
+/*hover*/
+
+ul li :hover {
+    color: #0156c0;
+    transition: all 0.25s ease-in-out;
+}
+
+
+/* .btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #212121;
+    border-color: #212121;
+} */
+
+i.fas {
+    color: #000;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn:hover>i.fas {
+    transition: all 0.25s ease-in-out;
+    transform: translateX(1rem);
+}
+
+a.left-anim,
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .2rem;
+    top: 2rem;
+    left: 0;
+    background-color: #131313;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.left-anim:hover::before,
+a.left:hover:before {
+    visibility: visible;
+    width: 108%;
+}
+
+a.left-anim:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: .2rem;
+    bottom: .2rem;
+    left: 0;
+    background-color: #131313;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer {
+    margin: 5rem auto 2rem auto;
+}
+
+.bugs a:hover {
+    opacity: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 540px) {
+    #greetings,
+    .hero-heading,
+    .body-text {
+        margin-bottom: 2rem;
+    }
+    .case-study {
+        margin-bottom: 6rem;
+    }
+    #last-case-study {
+        margin-bottom: 2.4rem;
+    }
+    .artwork-tall {
+        object-fit: cover;
+        height: 18rem;
+        width: 100%;
+    }
+    .artwork-wide {
+        object-fit: cover;
+        height: 12rem;
+        width: 100%;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    #my-links {
+        margin-left: -1.4rem;
+    }
+    .hero {
+        margin-top: 4rem;
+    }
+    #nav-brand {
+        display: none;
+    }
+    .social {
+        display: flex;
+    }
+    article {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .hero {
+        margin-top: 6rem;
+    }
+}
+
+
+/*Animations*/
+
+@keyframes show {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#emoji {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate( 0.0deg)
+    }
+}
+
+
+/*Dark Mode*/
+
+
+/* .dark body {
+    background-color: #152028;
+    color: #fff;
+}
+
+.dark-btn .my-btn {
+    background-color: #0156c0;
+    border-color: #0156c0;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    padding: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(1rem);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark-list i.fas {
+    color: white;
+} */
+
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        color: #f5f5f5;
+        background-color: #000;
+    }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    }
+    .fa-bars,
+    .fa-arrow-right {
+        color: #f5f5f5 !important;
+    }
+    .my-btn {
+        color: #000;
+        font-weight: 500;
+        background-color: #57aaf7 !important;
+    }
+    .btn:hover {
+        color: #f5f5f5 !important;
+    }
+    .secondary-cta {
+        color: #f5f5f5;
+    }
+    #my-links a {
+        color: #f5f5f5;
+    }
+    .social-icons i {
+        color: #f5f5f5;
+    }
+    img {
+        filter: contrast(1.2);
+        filter: brightness(0.9);
+    }
+    a.left:before,
+    a.left-anim::before {
+        background-color: #57aaf7!important;
+    }
+    .bugs a {
+        color: #f5f5f5;
+    }
+}*/
